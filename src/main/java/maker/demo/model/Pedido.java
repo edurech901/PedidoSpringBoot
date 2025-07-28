@@ -3,8 +3,6 @@ package maker.demo.model;
 import java.time.LocalDate;
 import java.util.List;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
-
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -16,6 +14,7 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Transient;
 import maker.demo.DTO.ClienteDTO;
+import maker.demo.DTO.EnderecoEntregaDTO;
 
 @Entity
 public class Pedido {
@@ -47,11 +46,12 @@ public class Pedido {
     @OneToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "endereco_id")
     private Endereco endereco_entrega;
-    @OneToMany(mappedBy = "pedido", cascade = CascadeType.PERSIST)
-    @JsonManagedReference
+    @OneToMany(cascade = CascadeType.ALL)
     private List<Produto> produtos;
     @Transient
-    private ClienteDTO dados_cliente;
+    private List<ClienteDTO> dados_cliente;
+    @Transient
+    private List<EnderecoEntregaDTO> enderecos_entrega;
 
     public Pedido() {
     }
@@ -231,4 +231,22 @@ public class Pedido {
     public void setProdutos(List<Produto> produtos) {
         this.produtos = produtos;
     }
+
+    public List<ClienteDTO> getDados_cliente() {
+        return dados_cliente;
+    }
+
+    public void setDados_cliente(List<ClienteDTO> dados_cliente) {
+        this.dados_cliente = dados_cliente;
+    }
+
+    public List<EnderecoEntregaDTO> getEnderecos_entrega() {
+        return enderecos_entrega;
+    }
+
+    public void setEnderecos_entrega(List<EnderecoEntregaDTO> enderecos_entrega) {
+        this.enderecos_entrega = enderecos_entrega;
+    }
+
+    
 }

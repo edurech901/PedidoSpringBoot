@@ -1,13 +1,9 @@
 package maker.demo.model;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 
 @Entity
 public class Produto {
@@ -20,10 +16,7 @@ public class Produto {
     private double preco;
     private String obs_item;
     private boolean bonificado;
-    @ManyToOne
-    @JoinColumn(name = "pedido_id")
-    @JsonBackReference
-    private Pedido pedido;
+
 
     public Produto() {
     }
@@ -74,14 +67,6 @@ public class Produto {
 
     public void setBonificado(boolean bonificado) {
         this.bonificado = bonificado;
-    }
-
-    public Pedido getPedido() {
-        return pedido;
-    }
-
-    public void setPedido(Pedido pedido) {
-        this.pedido = pedido;
     }
 
     public long getId() {

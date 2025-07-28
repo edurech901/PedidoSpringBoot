@@ -87,4 +87,5 @@ public class Cliente {
     public void setEmail_nfe(String email_nfe) {
         this.email_nfe = email_nfe;
     }
+
 }

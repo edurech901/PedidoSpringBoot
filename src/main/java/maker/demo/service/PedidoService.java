@@ -5,7 +5,6 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import maker.demo.model.Pedido;
-import maker.demo.model.Produto;
 import maker.demo.repository.PedidoRepository;
 
 @Service
@@ -18,10 +17,6 @@ public class PedidoService {
     }
 
     public Pedido criarPedido(Pedido pedido) {
-        for (Produto produto : pedido.getProdutos()) {
-
-            produto.setPedido(pedido);
-        }
         return repository.save(pedido);
     }
 

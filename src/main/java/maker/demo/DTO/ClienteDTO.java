@@ -12,7 +12,7 @@ public class ClienteDTO {
     private List<Endereco> enderecos;
     private String email;
     private String email_nfe;
-    private Endereco endereco_entrega;
+    private List<EnderecoEntregaDTO> endereco_entrega;
 
     public String getNome() {
         return nome;
@@ -70,11 +70,13 @@ public class ClienteDTO {
         this.email_nfe = email_nfe;
     }
 
-    public Endereco getEndereco_entrega() {
+    public List<EnderecoEntregaDTO> getEndereco_entrega() {
         return endereco_entrega;
     }
 
-    public void setEndereco_entrega(Endereco endereco_entrega) {
+    public void setEndereco_entrega(List<EnderecoEntregaDTO> endereco_entrega) {
         this.endereco_entrega = endereco_entrega;
     }
+
+
 }
