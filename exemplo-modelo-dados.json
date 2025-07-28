@@ -1,0 +1,167 @@
+{
+  "filial": "2",
+  "quantidade": 6.0000,
+  "total": 590.4000,
+  "tipo_pedido": "10405",
+  "cod_tabela_preco_venda": "015",
+  "cod_pedidov": "GRE75370560-01",
+  "n_pedido_cliente": "GRE75370560-01",
+  "lancamentos": [
+    {
+      "data_emissao": "2023-06-27",
+      "data_vencimento": "2023-07-27",
+      "valor_inicial": 98.40,
+      "data_pagamento": null,
+      "bandeira": "0",
+      "nsu": "317811295603",
+      "cod_autorizacao_cartao": "089330",
+      "autorizacao": "089330"
+    },
+    {
+      "data_emissao": "2023-06-27",
+      "data_vencimento": "2023-08-26",
+      "valor_inicial": 98.40,
+      "data_pagamento": null,
+      "bandeira": "0",
+      "nsu": "317811295603",
+      "cod_autorizacao_cartao": "089330",
+      "autorizacao": "089330"
+    },
+    {
+      "data_emissao": "2023-06-27",
+      "data_vencimento": "2023-09-25",
+      "valor_inicial": 98.40,
+      "data_pagamento": null,
+      "bandeira": "0",
+      "nsu": "317811295603",
+      "cod_autorizacao_cartao": "089330",
+      "autorizacao": "089330"
+    },
+    {
+      "data_emissao": "2023-06-27",
+      "data_vencimento": "2023-10-25",
+      "valor_inicial": 98.40,
+      "data_pagamento": null,
+      "bandeira": "0",
+      "nsu": "317811295603",
+      "cod_autorizacao_cartao": "089330",
+      "autorizacao": "089330"
+    },
+    {
+      "data_emissao": "2023-06-27",
+      "data_vencimento": "2023-11-24",
+      "valor_inicial": 98.40,
+      "data_pagamento": null,
+      "bandeira": "0",
+      "nsu": "317811295603",
+      "cod_autorizacao_cartao": "089330",
+      "autorizacao": "089330"
+    },
+    {
+      "data_emissao": "2023-06-27",
+      "data_vencimento": "2023-12-24",
+      "valor_inicial": 98.40,
+      "data_pagamento": null,
+      "bandeira": "0",
+      "nsu": "317811295603",
+      "cod_autorizacao_cartao": "089330",
+      "autorizacao": "089330"
+    }
+  ],
+  "data_entrega": "2023-07-06",
+  "obs": "|ECOMMERCE;03;02;089330;LVX3HZ2PM86R8HG2|FRETE FREE;25.70||",
+  "v_frete": 0.0000,
+  "usr_c_frete": 25.7000,
+  "tipo_frete": 208,
+  "nome_transportadora": "AZUL CARGO",
+  "cnpj_transportadora": "09296295001808",
+  "modalidade_frete": 0,
+  "datahora_expedicao": "2023-06-27",
+  "data_emissao": "2023-06-27",
+  "dados_cliente": [
+    {
+      "nome": "KEITIANE AMSTALDEN RUBIO",
+      "pf_pj": "PF",
+      "cpf": "07097249935",
+      "rg": null,
+      "endereco": [
+        {
+          "ddd": "41",
+          "fone": "984457869",
+          "logradouro": "Rua São José dos Pinhais",
+          "numero": "270",
+          "complemento": null,
+          "dicas_endereco": "Consultorio",
+          "bairro": "Sítio Cercado",
+          "cep": "81910010",
+          "cidade": "CURITIBA",
+          "estado": "PR"
+        }
+      ],
+      "e_mail": "keiti_amstalden@hotmail.com",
+      "e_mail_nfe": "keiti_amstalden@hotmail.com",
+      "endereco_entrega": [
+        {
+          "logradouro": "Rua São José dos Pinhais",
+          "numero": "270",
+          "complemento": null,
+          "dicas_endereco": "Consultorio",
+          "bairro": "Sítio Cercado",
+          "cep": "81910010",
+          "cidade": "Curitiba",
+          "estado": "PR"
+        }
+      ]
+    }
+  ],
+  "produtos": [
+    {
+      "item": 1,
+      "barra": "7909806693771",
+      "quantidade": 1.0000,
+      "preco": 71.9000000000000000,
+      "obs_item": "ECOMMERCE",
+      "bonificado": false
+    },
+    {
+      "item": 2,
+      "barra": "7909806921478",
+      "quantidade": 1.0000,
+      "preco": 111.9000000000000000,
+      "obs_item": "ECOMMERCE",
+      "bonificado": false
+    },
+    {
+      "item": 3,
+      "barra": "7909510642539",
+      "quantidade": 1.0000,
+      "preco": 149.9000000000000000,
+      "obs_item": "ECOMMERCE",
+      "bonificado": false
+    },
+    {
+      "item": 4,
+      "barra": "7909806660674",
+      "quantidade": 1.0000,
+      "preco": 104.9000000000000000,
+      "obs_item": "ECOMMERCE",
+      "bonificado": false
+    },
+    {
+      "item": 5,
+      "barra": "7909806693801",
+      "quantidade": 1.0000,
+      "preco": 71.9000000000000000,
+      "obs_item": "ECOMMERCE",
+      "bonificado": false
+    },
+    {
+      "item": 6,
+      "barra": "7909806313150",
+      "quantidade": 1.0000,
+      "preco": 79.9000000000000000,
+      "obs_item": "ECOMMERCE",
+      "bonificado": false
+    }
+  ]
+}
