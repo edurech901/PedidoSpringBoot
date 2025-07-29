@@ -2,6 +2,7 @@ package maker.demo.model;
 
 import java.util.List;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,7 +18,7 @@ public class Cliente {
     private String pf_pj;
     private String cpf_cnpj;
     private String rg;
-    @OneToMany(mappedBy="cliente")
+    @OneToMany(mappedBy="cliente", cascade = CascadeType.PERSIST)
     private List<Endereco> endereco;
     private String email;
     private String email_nfe;

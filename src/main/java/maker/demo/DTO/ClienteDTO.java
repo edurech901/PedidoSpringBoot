@@ -2,15 +2,21 @@ package maker.demo.DTO;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import maker.demo.model.Endereco;
 
 public class ClienteDTO {
     private String nome;
     private String pf_pj;
+    @JsonProperty("cpf")
     private String cpf_cnpj;
     private String rg;
+    @JsonProperty("endereco")
     private List<Endereco> enderecos;
+    @JsonProperty("e_mail")
     private String email;
+    @JsonProperty("e_mail_nfe")
     private String email_nfe;
     private List<EnderecoEntregaDTO> endereco_entrega;
 
