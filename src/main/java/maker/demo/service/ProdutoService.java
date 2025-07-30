@@ -25,8 +25,8 @@ public class ProdutoService {
             Field descricaoField = produto.getClass().getDeclaredField("descricao");
             descricaoField.setAccessible(true);
             descricaoField.set(produto, produtoDTO.getDescricao());
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (IllegalAccessException | IllegalArgumentException | NoSuchFieldException | SecurityException e) {
+            System.err.println("Erro ao atualizar o campo 'descricao': " + e.getMessage());
         }
     }
 }
